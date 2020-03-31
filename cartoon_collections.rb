@@ -15,9 +15,9 @@ def long_planeteer_calls(array)
 end
 
 def find_the_cheese(cheese)
-  cheese.each_with_index { |item,index| 
-    item.detect{ |x| ["cheddar", "gouda", "camembert"].include?(x)
-    }}
+  def find_the_cheese(cheese)
+    cheese.any? { |x| ["cheddar", "gouda", "camembert"].include?(x) }
+end
 end 
 
 cheese_types = ["cheddar", "gouda", "camembert"]

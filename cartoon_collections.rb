@@ -16,9 +16,8 @@ end
 
 def find_the_cheese(cheese)
   cheese.each_with_index { |item,index| 
-    item.any? { |x| ["cheddar", "gouda", "camembert"].include?(x)
+    item.detect? { |x| ["cheddar", "gouda", "camembert"].include?(x)
     }}
-    item
 end 
 
 cheese_types = ["cheddar", "gouda", "camembert"]

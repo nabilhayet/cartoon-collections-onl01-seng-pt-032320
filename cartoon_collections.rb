@@ -14,7 +14,7 @@ def long_planeteer_calls(array)
   array.any? {|i| i.length >4}
 end
   def find_the_cheese(cheese)
-    cheese.any? { |x| ["cheddar", "gouda", "camembert"].include?(x) }
+    cheese.detect { |x| ["cheddar", "gouda", "camembert"].include?(x) }
 end
 end 
 
